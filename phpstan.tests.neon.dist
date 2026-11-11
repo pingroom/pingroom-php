@@ -1,0 +1,10 @@
+# The tests, at level 5. Test code indexes decoded JSON (`mixed`) all over, which
+# the higher levels refuse; the library itself is held to `max` in phpstan.neon.dist.
+parameters:
+    level: 5
+    phpVersion: 80200
+    paths:
+        - tests
+    excludePaths:
+        - tests/Integration/fixtures
+    tmpDir: .phpstan/tests

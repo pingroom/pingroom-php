@@ -1,0 +1,8 @@
+# The library, at the maximum level. Tests are checked by phpstan.tests.neon.dist.
+parameters:
+    level: max
+    phpVersion: 80200
+    paths:
+        - src
+    tmpDir: .phpstan/src
+    treatPhpDocTypesAsCertain: false
